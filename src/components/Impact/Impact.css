@@ -1,0 +1,122 @@
+.impact {
+  width: 100%;
+
+  background: #f7fbf8;
+
+  padding: 110px 8%;
+}
+
+.impact-heading {
+  text-align: center;
+
+  margin-bottom: 70px;
+}
+
+.impact-heading h2 {
+  font-size: 48px;
+
+  color: #23372d;
+
+  margin-bottom: 18px;
+}
+
+.impact-heading p {
+  max-width: 700px;
+
+  margin: auto;
+
+  color: #6e7d76;
+
+  line-height: 30px;
+
+  font-size: 18px;
+}
+
+.impact-stats {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 30px;
+
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+.impact-item {
+  flex: 1;
+
+  text-align: center;
+
+  position: relative;
+}
+
+.impact-item:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  right: -15px;
+
+  top: 15%;
+
+  width: 1px;
+
+  height: 70%;
+
+  background: #d9e8de;
+}
+
+.impact-item h3 {
+  font-size: 62px;
+
+  color: #58b368;
+
+  margin-bottom: 12px;
+
+  font-weight: 700;
+}
+
+.impact-item span {
+  color: #60716a;
+
+  font-size: 17px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.3px;
+}
+.impact-item {
+  transition: 0.35s;
+}
+
+.impact-item:hover {
+  transform: translateY(-8px);
+}
+
+.impact-item:hover h3 {
+  color: #3f9c56;
+}
+
+@media (max-width: 900px) {
+  .impact {
+    padding: 80px 8%;
+  }
+
+  .impact-heading h2 {
+    font-size: 38px;
+  }
+
+  .impact-stats {
+    flex-direction: column;
+
+    gap: 45px;
+  }
+
+  .impact-item:not(:last-child)::after {
+    display: none;
+  }
+}

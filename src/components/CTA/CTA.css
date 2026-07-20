@@ -1,0 +1,106 @@
+.cta {
+    width: 90%;
+    margin: 100px auto;
+}
+
+.cta-content {
+
+    background: linear-gradient(135deg, #58B368, #6FCF7A);
+
+    border-radius: 30px;
+
+    padding: 70px 40px;
+
+    text-align: center;
+
+    color: white;
+
+    box-shadow: 0 20px 40px rgba(88, 179, 104, .18);
+
+}
+
+.cta-content h2 {
+
+    font-size: 46px;
+
+    margin-bottom: 20px;
+
+}
+
+.cta-content p {
+
+    max-width: 700px;
+
+    margin: 0 auto 40px;
+
+    line-height: 30px;
+
+    font-size: 18px;
+
+}
+
+.cta-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+.cta .primary-btn {
+
+    background: white;
+
+    color: #58B368;
+
+    border: none;
+
+    padding: 16px 32px;
+
+    border-radius: 40px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.cta .primary-btn:hover {
+
+    transform: translateY(-4px);
+
+}
+
+.cta .secondary-btn {
+
+    background: transparent;
+
+    color: white;
+
+    border: 2px solid white;
+
+    padding: 16px 32px;
+
+    border-radius: 40px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.cta .secondary-btn:hover {
+
+    background: white;
+
+    color: #58B368;
+
+}
