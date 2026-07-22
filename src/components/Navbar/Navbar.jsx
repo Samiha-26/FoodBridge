@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 import logo from "../../assets/images/logo.png";
@@ -6,6 +7,7 @@ function Navbar() {
   return (
     <header>
       <nav className="navbar">
+        {/* Logo */}
         <div className="logo">
           <img src={logo} alt="FoodBridge Logo" />
 
@@ -14,28 +16,30 @@ function Navbar() {
           </h2>
         </div>
 
+        {/* Navigation Links */}
         <ul className="nav-links">
           <li>
-            <a href="#">Home</a>
+            <NavLink to="/">Home</NavLink>
           </li>
 
           <li>
-            <a href="#">About</a>
+            <NavLink to="/about">About</NavLink>
           </li>
 
           <li>
-            <a href="#">Donate</a>
-          </li>
-
-          <li>
-            <a href="#">Contact</a>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
 
+        {/* Buttons */}
         <div className="buttons">
-          <button className="login">Login</button>
+          <NavLink to="/login">
+            <button className="login">Login</button>
+          </NavLink>
 
-          <button className="register">Register</button>
+          <NavLink to="/register">
+            <button className="register">Register</button>
+          </NavLink>
         </div>
       </nav>
     </header>
